@@ -1,0 +1,34 @@
+{
+    "name": "bankpanic",
+    "displayName": "bankpanic",
+    "description": "Bank Panic/Combat Hawk Compatible Gateware IP Core for FPGA",
+    "author": "boogermann",
+    "version": "0.1.0",
+    "license": "GPL-2.0-or-later",
+    "repository": "https://github.com/opengateware/arcade-bankp",
+    "keywords": [
+        "ecosystem:gateman"
+    ],
+    "scripts": {
+        "build:all": "gateman build all",
+        "verilator": "echo \"Error: no simulation specified\" && exit 1"
+    },
+    "hardware": {
+        "id": "bankpanic",
+        "name": "Bank Panic",
+        "year": 1984,
+        "manufacturer": "Sanritsu/Sega"
+    },
+    "platforms": {
+        "pocket": "1.1.1"
+    },
+    "modules": {
+        "cpu-tv80": "1.0.0",
+        "general-sync_fifo": "0.1.0",
+        "pocket-dataloader": "1.0.0",
+        "pocket-i2s": "1.0.0",
+        "pocket-joypad": "1.0.0",
+        "pocket-video": "1.0.0",
+        "sound-sn76489": "0.1.0"
+    }
+}

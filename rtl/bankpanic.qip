@@ -1,0 +1,15 @@
+# ==============================================================================
+# RTL
+# ==============================================================================
+set_global_assignment -name VERILOG_FILE       [file join $::quartus(qip_path) "bankpanic.v"]
+set_global_assignment -name VERILOG_FILE       [file join $::quartus(qip_path) "clk_en.v"]
+set_global_assignment -name VERILOG_FILE       [file join $::quartus(qip_path) "dpram.v"]
+set_global_assignment -name VERILOG_FILE       [file join $::quartus(qip_path) "x74138.v"]
+set_global_assignment -name VERILOG_FILE       [file join $::quartus(qip_path) "x74139.v"]
+set_global_assignment -name VERILOG_FILE       [file join $::quartus(qip_path) "x74161.v"]
+
+# ==============================================================================
+# MODULES
+# ==============================================================================
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "../modules/cpu-tv80/index.qip"]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "../modules/sound-sn76489/index.qip"]
